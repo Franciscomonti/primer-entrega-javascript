@@ -28,9 +28,7 @@ let descuento = producto * 10 / 100
 let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento)
 let preSinDesc = suma(producto, iva(producto))
 
-alert("precio de lista: " + preSinDesc)
-alert ("descuento: " + descuento)
-alert ("precio final con iva: " + nuevoPrecio )
+alert("precio de lista: " + preSinDesc + "\ndescuento: -" + descuento + "\nprecio final con iva: " + nuevoPrecio )
 
 let Cuotas = prompt("seleccione cantidad de cuotas:\n 1- 1 pago s/int \n 2- 2 pago s/int ")
 if(Cuotas == 1){
